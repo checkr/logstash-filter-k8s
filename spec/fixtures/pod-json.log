@@ -1,0 +1,93 @@
+{
+	"State": {
+		"Running": true,
+		"Paused": false,
+		"Restarting": false,
+		"OOMKilled": false,
+		"RemovalInProgress": false,
+		"Dead": false,
+		"Pid": 1427,
+		"ExitCode": 0,
+		"Error": "",
+		"StartedAt": "2016-09-06T17:26:52.477792167Z",
+		"FinishedAt": "0001-01-01T00:00:00Z"
+	},
+	"ID": "10975136c25e7f387182957dc38c9d0599ef126321b3c64fba71869c8dfe5701",
+	"Created": "2016-09-06T17:26:52.162175949Z",
+	"Path": "/pause",
+	"Args": [],
+	"Config": {
+		"Hostname": "ip-10-11-1-200",
+		"Domainname": "ec2.internal",
+		"User": "",
+		"AttachStdin": false,
+		"AttachStdout": false,
+		"AttachStderr": false,
+		"Tty": false,
+		"OpenStdin": false,
+		"StdinOnce": false,
+		"Env": null,
+		"Cmd": null,
+		"Image": "gcr.io/google_containers/pause-amd64:3.0",
+		"Volumes": null,
+		"WorkingDir": "",
+		"Entrypoint": [
+			"/pause"
+		],
+		"OnBuild": null,
+		"Labels": {
+			"io.kubernetes.container.hash": "d8dbe16c",
+			"io.kubernetes.container.name": "POD",
+			"io.kubernetes.container.restartCount": "0",
+			"io.kubernetes.container.terminationMessagePath": "",
+			"io.kubernetes.pod.name": "kube-proxy-ip-10-11-1-200.ec2.internal",
+			"io.kubernetes.pod.namespace": "kube-system",
+			"io.kubernetes.pod.terminationGracePeriod": "30",
+			"io.kubernetes.pod.uid": "acce19281f740ab9fd098b277e22de6a"
+		}
+	},
+	"Image": "sha256:99e59f495ffaa222bfeb67580213e8c28c1e885f1d245ab2bbe3b1b1ec3bd0b2",
+	"NetworkSettings": {
+		"Bridge": "",
+		"SandboxID": "d5af54bf063e36bb43702190bea8db61a1ed1583480a89330317c20aee672b00",
+		"HairpinMode": false,
+		"LinkLocalIPv6Address": "",
+		"LinkLocalIPv6PrefixLen": 0,
+		"Networks": {
+			"host": {
+				"IPAMConfig": null,
+				"Links": null,
+				"Aliases": null,
+				"NetworkID": "d06b2c14dba4dd35a5f728f9c85436f2115e5a564f4d2ef721ad35ddba75c367",
+				"EndpointID": "692baebff8446d78ba9daeb0613d1ccd1b538dc67652cbfb945169141e380540",
+				"Gateway": "",
+				"IPAddress": "",
+				"IPPrefixLen": 0,
+				"IPv6Gateway": "",
+				"GlobalIPv6Address": "",
+				"GlobalIPv6PrefixLen": 0,
+				"MacAddress": ""
+			}
+		},
+		"Ports": {},
+		"SandboxKey": "/var/run/docker/netns/default",
+		"SecondaryIPAddresses": null,
+		"SecondaryIPv6Addresses": null,
+		"IsAnonymousEndpoint": false
+	},
+	"LogPath": "/var/lib/docker/containers/10975136c25e7f387182957dc38c9d0599ef126321b3c64fba71869c8dfe5701/10975136c25e7f387182957dc38c9d0599ef126321b3c64fba71869c8dfe5701-json.log",
+	"Name": "/k8s_POD.d8dbe16c_kube-proxy-ip-10-11-1-200.ec2.internal_kube-system_acce19281f740ab9fd098b277e22de6a_b19e3661",
+	"Driver": "overlay",
+	"MountLabel": "system_u:object_r:svirt_lxc_file_t:s0:c137,c738",
+	"ProcessLabel": "system_u:system_r:svirt_lxc_net_t:s0:c137,c738",
+	"RestartCount": 0,
+	"HasBeenStartedBefore": true,
+	"HasBeenManuallyStopped": false,
+	"MountPoints": {},
+	"AppArmorProfile": "",
+	"HostnamePath": "/var/lib/docker/containers/10975136c25e7f387182957dc38c9d0599ef126321b3c64fba71869c8dfe5701/hostname",
+	"HostsPath": "/var/lib/docker/containers/10975136c25e7f387182957dc38c9d0599ef126321b3c64fba71869c8dfe5701/hosts",
+	"ShmPath": "/var/lib/docker/containers/10975136c25e7f387182957dc38c9d0599ef126321b3c64fba71869c8dfe5701/shm",
+	"ResolvConfPath": "/var/lib/docker/containers/10975136c25e7f387182957dc38c9d0599ef126321b3c64fba71869c8dfe5701/resolv.conf",
+	"SeccompProfile": "unconfined"
+}

@@ -1,0 +1,136 @@
+{
+	"State": {
+		"Running": true,
+		"Paused": false,
+		"Restarting": false,
+		"OOMKilled": false,
+		"RemovalInProgress": false,
+		"Dead": false,
+		"Pid": 19087,
+		"ExitCode": 0,
+		"Error": "",
+		"StartedAt": "2016-09-07T05:27:32.864628347Z",
+		"FinishedAt": "0001-01-01T00:00:00Z"
+	},
+	"ID": "c4d8a8c986fac347a93b085a0677d0672b2caaba7845a513d0ba9b5176fd1b53",
+	"Created": "2016-09-07T05:27:32.487019957Z",
+	"Path": "node",
+	"Args": [
+		"app.js"
+	],
+	"Config": {
+		"Hostname": "checkr-dashboard-deployment-1223682821-04fkp",
+		"Domainname": "",
+		"User": "",
+		"AttachStdin": false,
+		"AttachStdout": false,
+		"AttachStderr": false,
+		"ExposedPorts": {
+			"3000/tcp": {}
+		},
+		"Tty": false,
+		"OpenStdin": false,
+		"StdinOnce": false,
+		"Env": [
+			"NODE_ENV=production",
+			"KUBERNETES_SERVICE_HOST=10.3.0.1",
+			"KUBERNETES_SERVICE_PORT_HTTPS=443",
+			"KUBERNETES_PORT_443_TCP=tcp://10.3.0.1:443",
+			"KUBERNETES_PORT_443_TCP_PROTO=tcp",
+			"CHECKR_DASHBOARD_SERVICE_PORT_HTTPS=443",
+			"CHECKR_DASHBOARD_PORT=tcp://10.3.0.78:443",
+			"KUBERNETES_PORT=tcp://10.3.0.1:443",
+			"KUBERNETES_PORT_443_TCP_PORT=443",
+			"KUBERNETES_PORT_443_TCP_ADDR=10.3.0.1",
+			"CHECKR_DASHBOARD_PORT_443_TCP=tcp://10.3.0.78:443",
+			"CHECKR_DASHBOARD_PORT_443_TCP_PORT=443",
+			"CHECKR_DASHBOARD_PORT_443_TCP_PROTO=tcp",
+			"CHECKR_DASHBOARD_PORT_443_TCP_ADDR=10.3.0.78",
+			"KUBERNETES_SERVICE_PORT=443",
+			"CHECKR_DASHBOARD_SERVICE_HOST=10.3.0.78",
+			"CHECKR_DASHBOARD_SERVICE_PORT=443",
+			"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+			"NODE_VERSION=0.12.10",
+			"APP=/app"
+		],
+		"Cmd": null,
+		"Image": "checkr/dashboard:saso",
+		"Volumes": null,
+		"WorkingDir": "/app",
+		"Entrypoint": [
+			"node",
+			"app.js"
+		],
+		"OnBuild": null,
+		"Labels": {
+			"io.kubernetes.container.hash": "8c095b3d",
+			"io.kubernetes.container.name": "checkr-dashboard",
+			"io.kubernetes.container.restartCount": "0",
+			"io.kubernetes.container.terminationMessagePath": "/dev/termination-log",
+			"io.kubernetes.pod.name": "checkr-dashboard-deployment-1223682821-04fkp",
+			"io.kubernetes.pod.namespace": "default",
+			"io.kubernetes.pod.terminationGracePeriod": "30",
+			"io.kubernetes.pod.uid": "c63bf8b0-74bb-11e6-ab1f-0e245a15209f"
+		}
+	},
+	"Image": "sha256:376cdfcde99dae6c9232ab8b2d95f6578f0cbfdb833811a28168a85dda617c31",
+	"NetworkSettings": {
+		"Bridge": "",
+		"SandboxID": "",
+		"HairpinMode": false,
+		"LinkLocalIPv6Address": "",
+		"LinkLocalIPv6PrefixLen": 0,
+		"Networks": null,
+		"Ports": null,
+		"SandboxKey": "",
+		"SecondaryIPAddresses": null,
+		"SecondaryIPv6Addresses": null,
+		"IsAnonymousEndpoint": false
+	},
+	"LogPath": "/var/lib/docker/containers/c4d8a8c986fac347a93b085a0677d0672b2caaba7845a513d0ba9b5176fd1b53/c4d8a8c986fac347a93b085a0677d0672b2caaba7845a513d0ba9b5176fd1b53-json.log",
+	"Name": "/k8s_checkr-dashboard.8c095b3d_checkr-dashboard-deployment-1223682821-04fkp_default_c63bf8b0-74bb-11e6-ab1f-0e245a15209f_5f71f056",
+	"Driver": "overlay",
+	"MountLabel": "system_u:object_r:svirt_lxc_file_t:s0:c113,c800",
+	"ProcessLabel": "system_u:system_r:svirt_lxc_net_t:s0:c113,c800",
+	"RestartCount": 0,
+	"HasBeenStartedBefore": true,
+	"HasBeenManuallyStopped": false,
+	"MountPoints": {
+		"/dev/termination-log": {
+			"Source": "/var/lib/kubelet/pods/c63bf8b0-74bb-11e6-ab1f-0e245a15209f/containers/checkr-dashboard/5f71f056",
+			"Destination": "/dev/termination-log",
+			"RW": true,
+			"Name": "",
+			"Driver": "",
+			"Relabel": "",
+			"Propagation": "rprivate",
+			"Named": false
+		},
+		"/etc/hosts": {
+			"Source": "/var/lib/kubelet/pods/c63bf8b0-74bb-11e6-ab1f-0e245a15209f/etc-hosts",
+			"Destination": "/etc/hosts",
+			"RW": true,
+			"Name": "",
+			"Driver": "",
+			"Relabel": "",
+			"Propagation": "rprivate",
+			"Named": false
+		},
+		"/var/run/secrets/kubernetes.io/serviceaccount": {
+			"Source": "/var/lib/kubelet/pods/c63bf8b0-74bb-11e6-ab1f-0e245a15209f/volumes/kubernetes.io~secret/default-token-84c3k",
+			"Destination": "/var/run/secrets/kubernetes.io/serviceaccount",
+			"RW": false,
+			"Name": "",
+			"Driver": "",
+			"Relabel": "ro",
+			"Propagation": "rprivate",
+			"Named": false
+		}
+	},
+	"AppArmorProfile": "",
+	"HostnamePath": "/var/lib/docker/containers/881c80fe69c85a7347a381885e39826cb1c6d957509b877c0195abccc1a869ab/hostname",
+	"HostsPath": "/var/lib/kubelet/pods/c63bf8b0-74bb-11e6-ab1f-0e245a15209f/etc-hosts",
+	"ShmPath": "/var/lib/docker/containers/881c80fe69c85a7347a381885e39826cb1c6d957509b877c0195abccc1a869ab/shm",
+	"ResolvConfPath": "/var/lib/docker/containers/881c80fe69c85a7347a381885e39826cb1c6d957509b877c0195abccc1a869ab/resolv.conf",
+	"SeccompProfile": "unconfined"
+}
