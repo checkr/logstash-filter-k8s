@@ -14,16 +14,34 @@ input {
   file {
     # Path to to docker logs
     path => "/var/lib/docker/containers/**/*-json.log"
+    tags => ["kubernetes", "docker"]
   }
 }
 
 filter {
-  kubernetes {}
+  kubernetes {
+    add_tag => ["kubernetes_filtered"]  
+  }
 }
 
 output {
-  stdout {}
+  if "kubernetes_filtered" in [tags] {
+    elasticsearch {
+      ...
+      document_type => "%{[kubernetes][namespace]}_%{[kubernetes][pod]}_%{[kubernetes][container_name]}"
+    }
+  }
 }
+```
+
+### Available variables
+```
+[kubernetes][pod]
+[kubernetes][namespace]
+[kubernetes][container_name]
+[kubernetes][container_id]
+[kubernetes][image]
+[kubernetes][container_hash]
 ```
 
 If you're running logstash in a container, make sure that you mount both,
